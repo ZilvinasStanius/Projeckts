@@ -1,0 +1,144 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #eee;
+    margin-bottom: 20px;
+}
+.main-container{
+        max-width: 650px;
+        margin: 0 auto;
+        background-color: rgb(236, 235, 235);
+        padding: 40px;
+        border-radius: 7px;
+        
+}
+/* Input styling */
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.input label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input input,
+.input textarea,
+.input select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    transition: border-color 0.3s ease;
+}
+
+.input input:focus,
+.input textarea:focus,
+.input select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+}
+
+table th, table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #e9f7ff;
+}
+
+table td {
+    font-size: 16px;
+}
+.icon {
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 2px;
+    cursor: pointer;
+}
+.icon i {
+    color: rgb(49, 47, 47);
+}
+.icon:hover i {
+    color: rgb(255, 0, 0);
+}
+.icon:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table, .input, button {
+        width: 100%;
+    }
+    table th, table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

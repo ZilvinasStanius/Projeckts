@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="title"><span id="city">{miesto}</span> Temperaturu analize</h3>
+    <p><b>Pirma data:</b> <span id="start-date">{data}</span></p>
+    <p><b>Paskutine data:</b> <span id="last-date">{data}</span></p>
+    <p><b>Vidutines temperaturos:</b></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Minimali temperatura</th>
+          <th>Maksimali temperatura</th>
+        </tr>
+      </thead>
+      <tbody id="avg-temperatures">
+        <tr>
+          <td>2024-10-01</td>
+          <td>15.7</td>
+          <td>8.4</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <b>Silciausia diena (pagal vidutine temperatura):</b>
+      <span class="karsta">{data} - vid. temp {temp}</span>
+    </p>
+    <p>
+      <b>Salciausia diena (pagal vidutine temperatura):</b>
+      <span class="salta">{data} - vid. temp {temp}</span>
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html>
