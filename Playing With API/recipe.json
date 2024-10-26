@@ -1,0 +1,141 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti Bolognese",
+      "ingredients": [
+        "spaghetti",
+        "ground beef",
+        "onion",
+        "garlic",
+        "tomato sauce",
+        "carrot",
+        "celery"
+      ],
+      "time": 45,
+      "difficulty": "medium",
+      "image": "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg",
+      "description": "Cook spaghetti according to package instructions. In a skillet, cook ground beef until browned. Add chopped onion, garlic, carrot, and celery, then stir in tomato sauce and simmer for 15 minutes. Serve sauce over spaghetti."
+    },
+    {
+      "id": 2,
+      "name": "Vegetable Stir Fry",
+      "ingredients": [
+        "broccoli",
+        "carrot",
+        "bell pepper",
+        "soy sauce",
+        "ginger",
+        "garlic",
+        "sesame oil"
+      ],
+      "time": 20,
+      "difficulty": "easy",
+      "image": "https://www.themealdb.com/images/media/meals/wqurxy1511453156.jpg",
+      "description": "Heat sesame oil in a pan, then add minced garlic and ginger. Stir in broccoli, carrot, and bell pepper. Add soy sauce and stir fry for 5-7 minutes until vegetables are tender-crisp."
+    },
+    {
+      "id": 3,
+      "name": "Chicken Curry",
+      "ingredients": [
+        "chicken breast",
+        "curry powder",
+        "coconut milk",
+        "onion",
+        "garlic",
+        "ginger"
+      ],
+      "time": 40,
+      "difficulty": "medium",
+      "image": "https://www.themealdb.com/images/media/meals/1529444830.jpg",
+      "description": "Sauté diced onion, garlic, and ginger in oil. Add chicken pieces and curry powder, cooking until browned. Pour in coconut milk and simmer for 20 minutes until chicken is tender and sauce is thick."
+    },
+    {
+      "id": 4,
+      "name": "Caesar Salad",
+      "ingredients": [
+        "romaine lettuce",
+        "croutons",
+        "parmesan cheese",
+        "Caesar dressing"
+      ],
+      "time": 10,
+      "difficulty": "easy",
+      "image": "https://www.themealdb.com/images/media/meals/xusqvw1511638311.jpg",
+      "description": "Chop romaine lettuce and place in a bowl. Add croutons and grated parmesan. Drizzle with Caesar dressing and toss to combine."
+    },
+    {
+      "id": 5,
+      "name": "Beef Tacos",
+      "ingredients": [
+        "ground beef",
+        "taco shells",
+        "cheddar cheese",
+        "lettuce",
+        "tomato",
+        "sour cream"
+      ],
+      "time": 30,
+      "difficulty": "easy",
+      "image": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg",
+      "description": "Cook ground beef in a skillet until browned. Place beef in taco shells, top with cheese, shredded lettuce, diced tomato, and a dollop of sour cream."
+    },
+    {
+      "id": 6,
+      "name": "Pancakes",
+      "ingredients": ["flour", "milk", "egg", "butter", "sugar"],
+      "time": 15,
+      "difficulty": "easy",
+      "image": "https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg",
+      "description": "Mix flour, milk, egg, melted butter, and sugar to make a batter. Pour batter onto a hot griddle and cook until bubbles form, then flip and cook until golden brown."
+    },
+    {
+      "id": 7,
+      "name": "Tomato Soup",
+      "ingredients": [
+        "tomatoes",
+        "onion",
+        "garlic",
+        "vegetable broth",
+        "basil"
+      ],
+      "time": 25,
+      "difficulty": "easy",
+      "image": "https://www.themealdb.com/images/media/meals/qtqvys1468573168.jpg",
+      "description": "Sauté chopped onion and garlic in a pot. Add diced tomatoes and vegetable broth, then simmer for 15 minutes. Blend until smooth and season with salt, pepper, and fresh basil."
+    },
+    {
+      "id": 8,
+      "name": "Chicken Alfredo Pasta",
+      "ingredients": [
+        "fettuccine",
+        "chicken breast",
+        "cream",
+        "parmesan cheese",
+        "garlic"
+      ],
+      "time": 30,
+      "difficulty": "medium",
+      "image": "https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg",
+      "description": "Cook fettuccine according to package instructions. Sauté garlic in a pan, add cream and parmesan, stirring until smooth. Add cooked chicken and pasta, tossing to coat with sauce."
+    },
+    {
+      "id": 9,
+      "name": "Grilled Salmon",
+      "ingredients": ["salmon", "lemon", "dill", "olive oil", "salt", "pepper"],
+      "time": 20,
+      "difficulty": "medium",
+      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg",
+      "description": "Season salmon with salt, pepper, and dill. Grill for 4-5 minutes on each side. Squeeze fresh lemon juice over salmon before serving."
+    },
+    {
+      "id": 10,
+      "name": "Avocado Toast",
+      "ingredients": ["avocado", "bread", "lemon", "salt", "pepper"],
+      "time": 10,
+      "difficulty": "easy",
+      "image": "https://www.themealdb.com/images/media/meals/1550440197.jpg",
+      "description": "Toast the bread, then mash avocado and spread on top. Sprinkle with salt, pepper, and a squeeze of lemon juice."
+    }
+  ]
+}
