@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>To Do List</h1>
+      <div class="container">
+        <div class="task-div">
+          <span>Enter your task</span>
+          <input
+            class="task"
+            type="text"
+            placeholder="Enter Task"
+          />
+        </div>
+        <div class="button-div">
+          <button
+            id="addTask"
+            onclick="getTaskFromInput()"
+          >
+            Add Task
+          </button>
+        </div>
+      </div>
+    </main>
+    <section>
+      <div class="list-box container">
+        <ul class="tasks">
+          <!-- <li>Užduotis</li>
+          <li>Užduotis</li>
+          <li>Užduotis</li> -->
+        </ul>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
