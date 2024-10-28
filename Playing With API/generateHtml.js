@@ -1,7 +1,12 @@
-function generateHtml(data) {
+function generateHtml(data, selectedIngridients) {
   const dishContainerElement = document.querySelector('.dish-container');
   let html = '';
   for (const recipe of data) {
+    const igridientai = recipe.ingredients.map((ingridientas) =>
+      ingridientas === selectedIngridients
+        ? `<b>${ingridientas}</b>`
+        : ingridientas
+    );
     html += `<div class="image-container">
           <img
             src= ${recipe.image}
@@ -10,7 +15,7 @@ function generateHtml(data) {
           <div class="content"></div>
           <ul>
             <li>Dish: ${recipe.name}</li>
-            <li>Igridients: ${recipe.ingredients.toString()}</li>
+            <li>Igridients: ${igridientai.join(', ')}</li>
             <li>Cooking time: ${recipe.time} minutes</li>
             <li>Dificulty: ${recipe.difficulty}</li>
           </ul>
@@ -21,5 +26,3 @@ function generateHtml(data) {
   dishContainerElement.innerHTML = html;
   return html;
 }
-
-console.log(recipe.ingredients.toString());

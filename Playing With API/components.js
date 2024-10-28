@@ -3,9 +3,11 @@ function fillOptionList(data) {
   //   console.log(dish);
   let optionList = '';
   for (let index in data) {
-    optionList += ` <option>${data[index].toUpperCase()}</option>`;
+    optionList += ` 
+    <option class="opt">${data[index].toUpperCase()}</option>`;
   }
-  optionElement.innerHTML = optionList;
+  optionElement.innerHTML =
+    `<option class="opt">Select ingredient...</option>` + optionList;
   return optionList;
 }
 // console.log(data[index]);

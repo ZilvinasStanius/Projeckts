@@ -14,7 +14,8 @@ async function main() {
   });
   //   console.log(igridients);
   fillOptionList(igridients);
-  generateHtml(recipe);
+  //   generateHtml(recipe);\
+  filterDishByCategory(recipe);
 }
 
 main();
