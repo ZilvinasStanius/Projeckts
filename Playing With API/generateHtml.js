@@ -10,7 +10,7 @@ function generateHtml(data) {
           <div class="content"></div>
           <ul>
             <li>Dish: ${recipe.name}</li>
-            <li>Igridients: ${recipe.ingredients.toString()}</li>
+            <li>Igridients: ${recipe.ingredients.join(', ')}</li>
             <li>Cooking time: ${recipe.time} minutes</li>
             <li>Dificulty: ${recipe.difficulty}</li>
           </ul>
@@ -21,5 +21,3 @@ function generateHtml(data) {
   dishContainerElement.innerHTML = html;
   return html;
 }
-
-console.log(recipe.ingredients.toString());
