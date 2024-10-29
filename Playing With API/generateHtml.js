@@ -8,10 +8,10 @@ function generateHtml(data, selectedIngridients) {
         : ingridientas
     );
     html += `<div class="image-container">
-          <img
+          <div class = img-div  data-id="${recipe.id}"><img
             src= ${recipe.image}
             alt="dish image"
-          />
+          /></div>
           <div class="content"></div>
           <ul>
             <li>Dish: ${recipe.name}</li>
@@ -24,5 +24,6 @@ function generateHtml(data, selectedIngridients) {
       </div>`;
   }
   dishContainerElement.innerHTML = html;
+
   return html;
 }

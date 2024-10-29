@@ -31,6 +31,22 @@
         ></select>
         <button class="btn">Get Dish</button>
       </label>
+      <div class="modal-overlay">
+        <div class="modal-card">
+          <img
+            src="https://www.themealdb.com/images/media/meals/qtqvys1468573168.jpg"
+            alt="Dish Image"
+          />
+          <div class="content">
+            <h2>Dish Name</h2>
+            <p>Ingredients: Salt, Pepper, Olive Oil</p>
+            <p>Cooking Time: 30 minutes</p>
+            <p>Difficulty: Easy</p>
+            <button class="close-btn">Close</button>
+          </div>
+        </div>
+      </div>
+
       <div class="dish-container">
         <!-- <div class="image-container">
           <img
@@ -49,10 +65,12 @@
         <div class="testing"></div> -->
       </div>
     </div>
+
     <script src="components.js"></script>
     <script src="filterDish.js"></script>
     <script src="searchDish.js"></script>
     <script src="generateHtml.js"></script>
+    <script src="module.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

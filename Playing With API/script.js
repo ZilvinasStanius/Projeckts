@@ -12,7 +12,7 @@ async function main() {
   recipe.map((igridient) => {
     igridients.push(...igridient.ingredients);
   });
-  //   console.log(igridients);
+
   fillOptionList(igridients);
   //   generateHtml(recipe);\
   filterDishByCategory(recipe);
