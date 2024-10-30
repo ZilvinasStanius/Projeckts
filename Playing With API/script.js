@@ -12,10 +12,12 @@ async function main() {
   recipe.map((igridient) => {
     igridients.push(...igridient.ingredients);
   });
-
-  fillOptionList(igridients);
+  const notDublicatedIngridients = [...new Set(igridients)];
+  const alphabeticalOrder = notDublicatedIngridients.sort();
+  fillOptionList(alphabeticalOrder);
   //   generateHtml(recipe);\
   filterDishByCategory(recipe);
+  showAllRecipes(recipe);
 }
 
 main();

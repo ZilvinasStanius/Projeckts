@@ -1,12 +1,11 @@
 //Add event listener on each image from recipes
 const modalElement = document.querySelector('.modal-overlay');
 function getAllImages(recipes) {
-  //   console.log(`recipe:`, recipes);
-
   const imagesElement = document.querySelectorAll('.img-div');
   //   console.log(imagesElement);
   imagesElement.forEach((img) =>
     img.addEventListener('click', (event) => {
+      console.log(event);
       // We taking the curent image atributes data-id value
       const idOfRecipe = +event.currentTarget.getAttribute('data-id');
       //   console.log(typeof idOfRecipe);

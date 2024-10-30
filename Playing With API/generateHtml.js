@@ -27,3 +27,11 @@ function generateHtml(data, selectedIngridients) {
 
   return html;
 }
+
+function showAllRecipes(data) {
+  const showAllButtonElement = document.querySelector('.show-all-btn');
+  showAllButtonElement.addEventListener('click', () => {
+    generateHtml(data);
+    getAllImages(data);
+  });
+}
