@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Mini Bank App</title>
+  </head>
+  <body>
+    <h1>Create your bank account</h1>
+    <form
+      id="create-acc"
+      method="post"
+    >
+      <div class="container">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+        />
+        <input
+          type="number"
+          name="age"
+          min="18"
+          max="100"
+          placeholder="Age"
+        />
+      </div>
+      <button type="submit">Create Account</button>
+    </form>
+    <div class="manage-acc-div">
+      <h5>Already have account?</h5>
+      <a href="/ManageAccSide/manageAcc.html"
+        ><button class="mng-btn">Go to manage account</button></a
+      >
+    </div>
+    <div class="result"></div>
+    <script
+      type="module"
+      src="index.js"
+    ></script>
+  </body>
+</html>

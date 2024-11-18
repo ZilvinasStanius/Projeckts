@@ -1,0 +1,164 @@
+/* General reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+h3,
+h5 {
+  text-align: center;
+  color: #555;
+}
+
+/* Form and container styling */
+form {
+  max-width: 400px;
+  margin: 0 auto 20px;
+  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form div.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.home-btn {
+  width: 100%;
+}
+
+form button:hover {
+  background: #357ab7;
+}
+
+/* Profile box styling */
+.profile-box {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+ul#usr-acc {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+ul#usr-acc li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+#transactions-history {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+#transactions-history th,
+#transactions-history td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#transactions-history th {
+  background: #4a90e2;
+  color: white;
+}
+
+#transactions-history tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Navigation and links */
+a button {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+a button:hover {
+  background: #357ab7;
+}
+
+div.result {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.manage-acc-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button#history {
+  width: 100%;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button#history:hover {
+  background: #333;
+}
