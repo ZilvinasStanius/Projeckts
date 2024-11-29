@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Welcome to public server side!</h2>
+    <input
+      type="text"
+      id="search"
+      placeholder="Enter your search"
+    />
+    <a href="http://localhost:7999">Login</a>
+    <ul class="list"></ul>
+  </body>
+  <script>
+    const listItem = document.querySelector('.list');
+    async function getData() {
+      const promise = await fetch('http://localhost:7999/public/all-files');
+      const response = await promise.json();
+
+      fillTheTableWithData(response);
+      console.log(response);
+      filterFiles(response);
+    }
+
+    function filterFiles(files) {
+      const inputElement = document.querySelector('#search');
+      inputElement.addEventListener('input', () => {
+        const inpt = inputElement.value.toLowerCase();
+        const filteredInput = files.filter((file) =>
+          file.fileName.toLowerCase().includes(inpt)
+        );
+        fillTheTableWithData(filteredInput);
+      });
+    }
+    function fillTheTableWithData(files) {
+      let html = '';
+      for (const file of files) {
+        html += `<li>${file.fileName} <a href="${file.filePath} ">Wiew file</a> <a href="${file.filePath} "download><button>Download</button></a></li>`;
+      }
+      listItem.innerHTML = html;
+    }
+    getData();
+  </script>
+</html>
