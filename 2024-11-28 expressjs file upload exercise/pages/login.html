@@ -7,10 +7,15 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="/styles/style.css"
+    />
   </head>
   <body>
     <h2>Login to your account</h2>
     <form
+      class="loginForm"
       action="/login"
       method="POST"
     >
@@ -18,19 +23,60 @@
         type="text"
         name="username"
         placeholder="Enter Username"
+        id="username"
         required
       />
       <input
         type="password"
         name="password"
+        id="password"
         placeholder="Enter Password"
         required
       />
       <button type="submit">Log in</button>
+      <p
+        class="msg"
+        style="color: red; display: none"
+      ></p>
     </form>
     <p>Dont have an account?</p>
-    <a href="http://localhost:7999/register"><button>Register</button></a>
+    <a href="/register"><button>Register</button></a>
     <h5>Want to see public files?</h5>
-    <a href="http://localhost:7999/public"><button>Press here</button></a>
+    <a href="/public"><button>Press here</button></a>
   </body>
+
+  <script>
+    const form = document.querySelector('.loginForm');
+    const errorMsg = document.querySelector('.msg');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      try {
+        const promise = await fetch('http://localhost:7999/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, password }),
+        });
+
+        const response = await promise.json();
+
+        if (!promise.ok) {
+          errorMsg.textContent = response.error;
+          errorMsg.style.display = 'block';
+        } else {
+          window.location.href = '/protected';
+        }
+      } catch (err) {
+        errorMsg.textContent = 'Error Please try again later';
+        errorMsg.style.display = 'block';
+        console.error(err);
+      }
+    });
+  </script>
 </html>

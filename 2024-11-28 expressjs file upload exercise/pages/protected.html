@@ -7,9 +7,13 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/styles/style.css"
+    />
   </head>
   <body>
-    <h1>Welcome</h1>
+    <h1 class="msg">Welcome</h1>
     <a href="http://localhost:7999/file-add">Upload files here</a>
     <a href="/logout"><button>Log Out</button></a>
     <input
@@ -21,6 +25,16 @@
   </body>
   <script>
     const listItem = document.querySelector('.list');
+
+    async function fetchUsername() {
+      const promise = await fetch('http://localhost:7999/user');
+      const respone = await promise.json();
+
+      document.querySelector(
+        '.msg'
+      ).textContent = `Welcome, ${respone.username}`;
+    }
+    fetchUsername();
     async function getData() {
       const promise = await fetch('http://localhost:7999/all-files');
       const response = await promise.json();
@@ -45,7 +59,7 @@
     function fillTheTableWithData(files) {
       let html = '';
       for (const file of files) {
-        html += `<li>${file.fileName} <a href="${file.filePath} ">Wiew file</a> <a href="${file.filePath} "download><button>Download</button></a></li>`;
+        html += `<li>${file.fileName} <a href="${file.filePath} " target="_blank">Wiew file</a> <a href="${file.filePath} "download><button>Download</button></a></li>`;
       }
       listItem.innerHTML = html;
     }

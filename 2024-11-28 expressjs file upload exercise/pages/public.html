@@ -7,6 +7,10 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/styles/style.css"
+    />
   </head>
   <body>
     <h2>Welcome to public server side!</h2>
@@ -42,7 +46,7 @@
     function fillTheTableWithData(files) {
       let html = '';
       for (const file of files) {
-        html += `<li>${file.fileName} <a href="${file.filePath} ">Wiew file</a> <a href="${file.filePath} "download><button>Download</button></a></li>`;
+        html += `<li>${file.fileName} <a href="${file.filePath}" target="_blank" ">Wiew file</a> <a href="${file.filePath} "download><button>Download</button></a></li>`;
       }
       listItem.innerHTML = html;
     }

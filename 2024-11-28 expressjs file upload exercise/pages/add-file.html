@@ -7,8 +7,17 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Upload files</title>
+    <link
+      rel="stylesheet"
+      href="/styles/style.css"
+    />
   </head>
   <body>
+    <nav>
+      <div class="container">
+        <a href="/protected">Main</a>
+      </div>
+    </nav>
     <form
       action="/upload"
       method="POST"
@@ -24,8 +33,22 @@
       <input
         type="file"
         name="file"
+        class="inpt"
       />
-      <button type="submit">Upload</button>
+      <button
+        type="submit"
+        class="btn"
+      >
+        Upload
+      </button>
     </form>
   </body>
+  <script>
+    const inpt = document.querySelector('.inpt');
+    const btn = document.querySelector('.btn');
+    btn.addEventListener('click', () => {
+      if (!inpt.value) return alert('Please select file');
+      alert('File uploaded');
+    });
+  </script>
 </html>
